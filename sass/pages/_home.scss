@@ -7,6 +7,11 @@
 .about-content {
   max-width: 114rem;
   margin: 0 auto;
-  &__text {
+
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+
+  &__description {
+    // flex-basis: 57rem;
   }
 }
