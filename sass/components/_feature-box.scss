@@ -1,9 +1,4 @@
 .feature {
-  &-content {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6rem;
-  }
-
   &-box {
     background-color: rgba($color-white, 0.8);
     font-size: 1.5rem;
