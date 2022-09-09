@@ -17,15 +17,33 @@
   margin-bottom: 8rem !important;
 }
 
-.flex {
-  display: flex;
+.u-margin-top-huge {
+  margin-top: 10rem !important;
 }
 
-.grid {
-  display: grid;
+.flex {
+  display: flex;
 }
 
 .container {
   max-width: 114rem;
   margin: 0 auto;
+}
+
+// Grid
+.grid {
+  display: grid;
+  gap: 6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
