@@ -11,10 +11,17 @@
 }
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
 }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-margin-top-huge {
@@ -28,6 +35,11 @@
 .container {
   max-width: 114rem;
   margin: 0 auto;
+
+  @include respond(tab-port) {
+    max-width: 60rem;
+    padding: 0 3rem;
+  }
 }
 
 // Grid
@@ -38,12 +50,23 @@
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
